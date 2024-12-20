@@ -1,0 +1,616 @@
+
+/* TARJETAS DE COLORES DE CARACTERISTICAS */
+
+.card:hover {
+    transform: translateY(-10px);
+  }
+
+  .card-img-top {
+    height: 60%;
+    object-fit: cover;
+  }
+
+  .card-body {
+    padding: 10px;
+  }
+
+  .card-body .card-title {
+    font-weight: bold;
+  }
+
+  .btn {
+    width: 100%;
+    margin-top: 10px;
+  }
+
+
+
+
+
+
+/* TITULOS PRINCIPALES DE PRESENTACIONES */
+  .service-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 40px;
+  }
+
+  .service-title {
+    font-size: 36px;
+    font-weight: bold;
+    color: #1F2937;
+    text-align: center;
+    margin-bottom: 8px;
+    position: relative;
+    transition: transform 0.3s ease; /* Animación de acercar al mouse */
+    margin-left: 300px; /* Parámetro para mover el el texto de izquierda a derecha */
+  }
+
+  .service-title:hover {
+    transform: translateY(-5px); /* Animación de acercar al mouse */
+  }
+
+  .service-title::after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    bottom: -12px;
+    transform: translateX(-50%);
+    width: 600px; /* Parámetro para agrandar la línea */
+    height: 4px;
+    background-color: #805AD5;
+    border-radius: 2px;
+  }
+
+  .service-button {
+    background-color: #805AD5;
+    color: white;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+    margin-left: 300px; /* Parámetro para mover el botón de izquierda a derecha */
+  }
+
+  .service-button:hover {
+    transform: translateY(-5px);
+  }
+
+
+
+
+
+
+/* Contenedor FINAL DE DATOS DE CIERRE DEL INCIIO */
+.contenedor-principal {
+    display: flex; /* Divide en dos columnas */
+    max-width: 85%; /* Tamaño total de la tarjeta */
+    margin: 50px auto;
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    transition: transform 0.3s ease;
+}
+
+/* Animación de elevación al seleccionar */
+.contenedor-principal:hover {
+    transform: translateX(10px); /* Se levanta por el lado derecho */
+}
+
+/* Sección izquierda (Imagen) */
+.seccion-izquierda {
+    background-color: #b0d235; /* Fondo verde */
+    flex: 1 1 40%; /* Ajusta dinámicamente el ancho de la imagen */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Imagen */
+.imagen-veterinaria {
+    width: 90%; /* Tamaño ajustable de la imagen */
+    height: auto;
+    transition: transform 0.3s ease;
+}
+
+/* Sección derecha (Contenido) */
+.seccion-derecha {
+    flex: 1 1 60%; /* Ajusta dinámicamente el ancho del contenido */
+    padding: 30px;
+}
+
+/* Encabezado: Logo y título */
+.encabezado {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+
+
+.logo {
+    width: var(--logo-size, 300px); /* Tamaño del logo (personalizable con CSS variables) */
+    transition: transform 0.3s ease;
+}
+
+.logo:hover {
+    transform: scale(1.1); /* Efecto hover en el logo */
+}
+
+.titulo {
+    font-size: 1.8em;
+    color: #2d2d2d;
+    font-weight: 700;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+/* Descripción */
+.descripcion {
+    font-size: 1em;
+    color: #666;
+    line-height: 1.5;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+/* Información de contacto */
+.contacto {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+}
+
+.item-contacto {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: #333;
+    font-size: 1.1em;
+}
+
+.icono {
+    font-size: 1.5em;
+    color: #7e479c; /* Púrpura */
+}
+
+/* Botón de cita */
+.boton-cita {
+    display: inline-block;
+    background-color: #6f42c1; /* Púrpura */
+    color: white;
+    text-decoration: none;
+    padding: 15px 40px;
+    border-radius: 8px;
+    font-size: 1.2em;
+    font-weight: bold;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    margin-top: 20px;
+    margin-left: var(--button-offset, 270px); /* Parámetro de desplazamiento horizontal */
+    text-align: center;
+}
+
+/* Animación del botón */
+.boton-cita:hover {
+    background-color: #563d7c; /* Púrpura oscuro */
+    transform: scale(1.05); /* Aumenta ligeramente el tamaño */
+}
+
+
+
+
+
+
+
+/* CONTENEDOR DE 4 TARJETAS DE INFORMACION */
+.beneficios-container {
+    display: flex; /* Diseño en fila */
+    justify-content: space-between; /* Espaciado entre bloques */
+    align-items: center; /* Alineación vertical */
+    gap: 10px; /* Espacio entre los bloques */
+    background-color: #f2fce9; /* Fondo verde claro */
+    padding: 20px;
+    border-radius: 10px;
+    width: 100%; /* Ocupa toda la página horizontalmente */
+    margin: 0 auto; /* Centrado */
+    box-sizing: border-box; /* Incluye padding en el cálculo del ancho */
+}
+
+/* Estilo general de cada bloque */
+.beneficio {
+    display: flex;
+    align-items: center; /* Alinea verticalmente icono y texto */
+    gap: 10px; /* Espacio entre icono y texto */
+    background-color: white; /* Fondo blanco */
+    border-radius: 10px; /* Bordes redondeados */
+    padding: 15px;
+    flex: 1; /* Bloques ajustables proporcionalmente */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra ligera */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Animación suave */
+    cursor: pointer; /* Indica interactividad */
+}
+
+.beneficio:hover {
+    transform: translateY(-10px); /* Levanta el bloque */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Sombra al pasar el mouse */
+}
+
+/* Iconos */
+.icono {
+    background-color: #f9f9f9; /* Fondo gris claro */
+    border-radius: 50%; /* Forma circular */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80px; /* Tamaño reducido del círculo */
+    height: 80px;
+    overflow: hidden; /* Recorte dentro del círculo */
+}
+
+.icono img {
+    width: 80%; /* Imagen más pequeña dentro del círculo */
+    height: 80%;
+    object-fit: cover; /* Recorte proporcional para cubrir el círculo */
+}
+
+/* Texto */
+.texto {
+    text-align: left; /* Texto alineado a la izquierda */
+}
+
+.texto h3 {
+    margin: 0 0 5px;
+    font-size: 1em; /* Tamaño ajustado */
+    font-weight: 700; /* Negrita */
+    color: #2d2d2d; /* Negro/gris oscuro */
+}
+
+.texto p {
+    margin: 0;
+    font-size: 0.9em; /* Tamaño ajustado */
+    color: #666; /* Gris claro */
+}
+
+
+
+
+
+
+
+
+
+/* Estilos DE PERRITOS Y GATITOS ANIMADOS */
+.movie-section {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 40px 20px;
+    background: linear-gradient(to bottom right, #ffffff);
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+}
+
+.header {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.header h1 {
+    font-size: 36px;
+    margin-bottom: 10px;
+    color: #ffc107;
+}
+
+.header h2 {
+    font-size: 24px;
+    margin-top: 0;
+}
+
+.header-image {
+    margin-top: 20px;
+}
+
+.header-image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.3);
+}
+
+/* Estilos para las imagenes de animalitos */
+.movie-grid {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+/* Estilos para cada tarjeta */
+.movie-card {
+    position: relative;
+    width: 200px; /* Ancho de cada tarjeta */
+    height: 300px; /* Altura de cada tarjeta */
+    background-color: #333;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
+    transition: transform 0.3s ease-in-out; /* Animación de transformación */
+}
+
+.movie-card:hover {
+    transform: scale(1.05); /* Aumentar tamaño al pasar el mouse */
+}
+
+.movie-card img {
+    width: 100%;
+    height: auto;
+    display: block;
+    object-fit: cover;
+}
+
+/* Estilos para la superposición de texto (card-overlay) */
+.card-overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 10px;
+    box-sizing: border-box;
+    opacity: 1; /* Mostrar siempre la superposición */
+    text-align: center; /* Centrar el contenido */
+}
+
+.card-overlay .card-title {
+    font-size: 18px;
+    color: #f2f2f2; /* Color del título */
+    margin-bottom: 5px;
+    text-align: center; /* Centrar el título */
+}
+/* Estilos para la descripción dentro de la superposición de texto (card-overlay) */
+.card-overlay .card-description {
+    font-size: 14px;
+    color: #f2f2f2; /* Cambio de color para la descripción */
+}
+
+
+
+/*ESTRUCTURA DE MENSAJE Y FORMULARIO*/
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    display: flex;
+    height: auto; /* Cambiado a auto para ajustar la altura al contenido */
+}
+
+.left-section {
+    flex: 1;
+    background: linear-gradient(to bottom right, #000000, #404040);
+    color: #ffffff;
+    padding: 90px 40px;
+    box-sizing: border-box;
+    text-align: center; /* Alineación del texto al centro */
+
+}
+
+.left-section h2 {
+    font-size: 32px;
+    margin-top: 0;
+}
+
+.left-section p {
+    font-size: 18px;
+    line-height: 1.5;
+}
+
+.right-section {
+    flex: 1;
+    background-color: #f5f5f5;
+    padding: 50px;
+    box-sizing: border-box;
+}
+
+.logo {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.logo img {
+    max-width: 100px;
+}
+
+form {
+    max-width: 400px;
+    margin: 0 auto;
+    display: flex; /* Añadido para organizar los elementos en columna */
+    flex-direction: column; /* Añadido para organizar los elementos en columna */
+}
+
+input, textarea {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-size: 16px;
+}
+
+textarea {
+    height: 150px;
+}
+
+button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    display: block;
+    margin: 0 auto;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+
+
+
+
+
+
+
+
+/* CONTENEDOR DE 3 TARJETAS DE CIERRE */
+.informacion-container {
+    display: flex; /* Diseño en fila */
+    justify-content: space-between; /* Espaciado uniforme entre bloques */
+    align-items: center; /* Alineación vertical */
+    gap: 10px; /* Espacio entre bloques */
+    background-color: #f2fce9; /* Fondo verde claro */
+    padding: 20px; /* Espaciado interno */
+    border-radius: 10px; /* Bordes redondeados */
+    width: 100%; /* Ocupa toda la fila horizontal */
+    margin: 0 auto; /* Centra el contenedor */
+    box-sizing: border-box; /* Incluye padding en el cálculo del ancho */
+}
+
+/* Bloques individuales */
+.info-bloque {
+    display: flex;
+    align-items: center; /* Alineación vertical centrada */
+    gap: 10px; /* Espacio entre icono y texto */
+    background-color: white; /* Fondo blanco */
+    border-radius: 10px; /* Bordes redondeados */
+    padding: 15px;
+    flex: 1; /* Bloques ajustables proporcionalmente */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra ligera */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Animación suave */
+    cursor: pointer; /* Indica interactividad */
+}
+
+.info-bloque:hover {
+    transform: translateY(-10px); /* Efecto de levantamiento */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Sombra más pronunciada */
+}
+
+/* Iconos */
+.info-icono {
+    background-color: #f9f9f9; /* Fondo gris claro */
+    border-radius: 50%; /* Forma circular */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80px; /* Tamaño del círculo */
+    height: 80px;
+    overflow: hidden; /* Recorte dentro del círculo */
+}
+
+.info-icono img {
+    width: 80%; /* Imagen más pequeña */
+    height: 80%;
+    object-fit: cover; /* Ajuste proporcional */
+}
+
+/* Texto */
+.info-texto {
+    text-align: left; /* Alineación del texto */
+}
+
+.info-texto h3 {
+    margin: 0 0 5px;
+    font-size: 1em; /* Tamaño del título ajustado */
+    font-weight: 700; /* Negrita */
+    color: #2d2d2d; /* Color negro/gris oscuro */
+}
+
+.info-texto p {
+    margin: 0;
+    font-size: 0.9em; /* Tamaño del texto ajustado */
+    color: #666; /* Color gris claro */
+}
+
+
+
+
+
+
+
+
+
+/*REDES SOCIALES*/
+.social-section {
+    background-color: #ffffff;
+    padding: 40px 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+    max-width: 1500px;
+    margin: 0 auto;
+}
+
+.social-section h2 {
+    text-align: center;
+    font-family: Arial, sans-serif;
+    font-weight: bold;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.social-cards {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.social-card {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    margin: 10px;
+    max-width: 120px;
+    transition: transform 0.3s ease-in-out;
+    text-decoration: none;
+    color: inherit;
+}
+
+.social-card:hover {
+    transform: scale(1.05);
+}
+
+.social-card img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.social-card-body {
+    padding: 10px;
+    text-align: center;
+    font-family: Arial, sans-serif;
+}
+
+.social-card-body h3 {
+    margin-top: 0;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.social-card-body p {
+    margin-bottom: 0;
+    font-size: 14px;
+}
+
