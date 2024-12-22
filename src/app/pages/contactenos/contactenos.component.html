@@ -63,22 +63,29 @@
 
 
 
-
-
-    <!-- FORMULARIO DE DUDASSSSSSSSSS -->
-    <div class="container my-5"> 
-      <h2 class="text-center mb-4">¿Tienes dudas? ¡Escríbelas aqui!</h2>
-      <div class="row">
-        <div class="col-12">
+<!-- FORMULARIO DE DUDAS -->
+<div class="container my-5"> 
+  <!-- Título principal del formulario de dudas -->
+  <h2 class="text-center mb-4">¿Tienes dudas? ¡Escríbelas aquí!</h2>
+  <div class="row">
+      <div class="col-12">
+          <!-- Contenedor de elementos del formulario -->
           <div class="hstack gap-3 justify-content-start">
-            <input class="form-control input-animate text-box-custom" type="text" placeholder="Escribe tu duda aquí..." aria-label="Escribe tu duda aquí...">
-            <button type="button" class="btn btn-purple btn-animate btn-custom btn-enviar">Enviar</button>
-            <div class="vr separator-custom"></div>
-            <button type="button" class="btn btn-purple btn-animate btn-custom btn-reset">Restablecer</button>
+              <!-- Campo de texto donde el usuario escribe su duda -->
+              <input class="form-control input-animate text-box-custom" type="text" placeholder="Escribe tu duda aquí..." aria-label="Escribe tu duda aquí...">
+              
+              <!-- Botón para enviar la duda -->
+              <button type="button" class="btn btn-purple btn-animate btn-custom btn-enviar">Enviar</button>
+              
+              <!-- Separador vertical entre los botones -->
+              <div class="vr separator-custom"></div>
+              
+              <!-- Botón para restablecer el campo de texto -->
+              <button type="button" class="btn btn-purple btn-animate btn-custom btn-reset">Restablecer</button>
           </div>
-        </div>
       </div>
-    </div>
+  </div>
+</div>
 
 
 
@@ -173,84 +180,91 @@
 
 
 
+<div class="row">
+  <!-- Lado izquierdo: Contenedor -->
+  <div class="col-md-6 d-flex flex-column justify-content-center align-items-center" style="background-color: rgba(0, 0, 0, 0.585); color: white; padding: 30px; border-radius: 15px;">
+    <!-- Subtítulo e imagen -->
+    <div style="text-align: center; color: #fff; margin-top: 20px;">
+      <h3 style="font-size: 2rem; font-weight: bold;">Queremos escucharte</h3>
+      <p style="font-size: 1.5rem;">Tus comentarios nos ayudan a mejorar y ofrecerte el mejor servicio posible.</p>
+    </div>
+    <!-- Imagen representativa -->
+    <div style="width: 100%; display: flex; justify-content: center; margin: 20px 0;">
+      <img src="Opinion.png" alt="Imagen representativa" style="max-width: 60%; height: auto; border-radius: 15px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);">
+    </div>
+    <!-- Frase inspiradora -->
+    <h2 style="font-size: 1.5rem; margin-bottom: 20px; color: #ffffff; text-align: center;">"Tu opinión es la clave para nuestro crecimiento."</h2>
+  </div>
 
-    <div class="row">
-      <!-- Lado izquierdo: Contenedor -->
-      <div class="col-md-6 d-flex flex-column justify-content-center align-items-center" style="background-color: rgba(0, 0, 0, 0.585); color: white; padding: 30px; border-radius: 15px;">
-        <!-- Subtítulo e imagen -->
-        <div style="text-align: center; color: #fff; margin-top: 20px;">
-          <h3 style="font-size: 2rem; font-weight: bold;">Queremos escucharte</h3>
-          <p style="font-size: 1.5rem;">Tus comentarios nos ayudan a mejorar y ofrecerte el mejor servicio posible.</p>
-        </div>
-        <div style="width: 100%; display: flex; justify-content: center; margin: 20px 0;">
-          <img src="Opinion.png" alt="Imagen representativa" style="max-width: 60%; height: auto; border-radius: 15px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);">
-        </div>
-        <h2 style="font-size: 1.5rem; margin-bottom: 20px; color: #ffffff; text-align: center;">"Tu opinión es la clave para nuestro crecimiento."</h2>
+  <!-- Lado derecho: Formulario -->
+  <div class="col-md-6">
+    <div style="background: white; padding: 30px; border-radius: 15px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);">
+      <!-- Título del formulario -->
+      <div style="border: 3px solid #007BFF; padding: 15px; border-radius: 10px; margin-bottom: 20px;">
+        <h1 style="font-size: 3rem; color: #007BFF; font-weight: bold; text-align: center;">Formulario de Opinión</h1>
       </div>
-  
-      <!-- Lado derecho: Formulario -->
-      <div class="col-md-6">
-        <div style="background: white; padding: 30px; border-radius: 15px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);">
-          <div style="border: 3px solid #007BFF; padding: 15px; border-radius: 10px; margin-bottom: 20px;">
-            <h1 style="font-size: 3rem; color: #007BFF; font-weight: bold; text-align: center;">Formulario de Opinión</h1>
+      <!-- Subtítulo del formulario -->
+      <h2 style="font-size: 1.5rem; margin-bottom: 20px; color: #555; text-align: center;">Completa los campos a continuación</h2>
+      <!-- Inicio del formulario -->
+      <form class="row g-3">
+        <!-- Campo de nombre -->
+        <div class="col-md-6">
+          <label for="validationServerName" class="form-label">Nombre</label>
+          <input type="text" class="form-control is-valid" id="validationServerName" placeholder="Ingresa tu nombre" required>
+          <div class="valid-feedback">
+            ¡Se ve bien!
           </div>
-          <h2 style="font-size: 1.5rem; margin-bottom: 20px; color: #555; text-align: center;">Completa los campos a continuación</h2>
-          <form class="row g-3">
-            <div class="col-md-6">
-              <label for="validationServerName" class="form-label">Nombre</label>
-              <input type="text" class="form-control is-valid" id="validationServerName" placeholder="Ingresa tu nombre" required>
-              <div class="valid-feedback">
-                ¡Se ve bien!
-              </div>
-            </div>
-            <div class="col-md-6">
-              <label for="validationServerEmail" class="form-label">Correo Electrónico</label>
-              <input type="email" class="form-control is-invalid" id="validationServerEmail" placeholder="correo@ejemplo.com" required>
-              <div id="validationServerEmailFeedback" class="invalid-feedback">
-                Por favor, ingresa un correo válido.
-              </div>
-            </div>
-            <div class="col-md-12">
-              <label for="validationServerType" class="form-label">Tipo de opinión</label>
-              <select class="form-select is-valid" id="validationServerType" required>
-                <option selected disabled value="">Selecciona...</option>
-                <option value="queja">Queja</option>
-                <option value="recomendacion">Recomendación</option>
-                <option value="felicitacion">Felicitación</option>
-              </select>
-              <div id="validationServerTypeFeedback" class="valid-feedback">
-                ¡Perfecto!
-              </div>
-            </div>
-            <div class="col-md-12">
-              <label for="validationServerMessage" class="form-label">Mensaje</label>
-              <textarea class="form-control is-invalid" id="validationServerMessage" rows="4" placeholder="Escribe aquí tu opinión..." required></textarea>
-              <div id="validationServerMessageFeedback" class="invalid-feedback">
-                Por favor, escribe un mensaje.
-              </div>
-            </div>
-            <div class="col-md-12">
-              <div class="form-check">
-                <input class="form-check-input is-invalid" type="checkbox" value="" id="invalidCheck3" aria-describedby="invalidCheck3Feedback" required>
-                <label class="form-check-label" for="invalidCheck3">
-                  Confirmo que mi opinión es honesta y respetuosa.
-                </label>
-                <div id="invalidCheck3Feedback" class="invalid-feedback">
-                  Debes confirmar antes de enviar.
-                </div>
-              </div>
-            </div>
-
-
-            <!-- Botón para enviar el formulario -->
-          <div class="text-center">
-            <button type="submit" class="btn btn-primary btn-lg" style="width: 100%;">Enviar opinión</button>
+        </div>
+        <!-- Campo de correo electrónico -->
+        <div class="col-md-6">
+          <label for="validationServerEmail" class="form-label">Correo Electrónico</label>
+          <input type="email" class="form-control is-invalid" id="validationServerEmail" placeholder="correo@ejemplo.com" required>
+          <div id="validationServerEmailFeedback" class="invalid-feedback">
+            Por favor, ingresa un correo válido.
           </div>
-        </form>
-      </div>
+        </div>
+        <!-- Campo de tipo de opinión -->
+        <div class="col-md-12">
+          <label for="validationServerType" class="form-label">Tipo de opinión</label>
+          <select class="form-select is-valid" id="validationServerType" required>
+            <option selected disabled value="">Selecciona...</option>
+            <option value="queja">Queja</option>
+            <option value="recomendacion">Recomendación</option>
+            <option value="felicitacion">Felicitación</option>
+          </select>
+          <div id="validationServerTypeFeedback" class="valid-feedback">
+            ¡Perfecto!
+          </div>
+        </div>
+        <!-- Campo de mensaje -->
+        <div class="col-md-12">
+          <label for="validationServerMessage" class="form-label">Mensaje</label>
+          <textarea class="form-control is-invalid" id="validationServerMessage" rows="4" placeholder="Escribe aquí tu opinión..." required></textarea>
+          <div id="validationServerMessageFeedback" class="invalid-feedback">
+            Por favor, escribe un mensaje.
+          </div>
+        </div>
+        <!-- Confirmación de la opinión -->
+        <div class="col-md-12">
+          <div class="form-check">
+            <input class="form-check-input is-invalid" type="checkbox" value="" id="invalidCheck3" aria-describedby="invalidCheck3Feedback" required>
+            <label class="form-check-label" for="invalidCheck3">
+              Confirmo que mi opinión es honesta y respetuosa.
+            </label>
+            <div id="invalidCheck3Feedback" class="invalid-feedback">
+              Debes confirmar antes de enviar.
+            </div>
+          </div>
+        </div>
+
+        <!-- Botón para enviar el formulario -->
+        <div class="text-center">
+          <button type="submit" class="btn btn-primary btn-lg" style="width: 100%;">Enviar opinión</button>
+        </div>
+      </form>
     </div>
   </div>
-  
+</div>
 
 
 
@@ -309,79 +323,82 @@
 
 
 
+    <!-- SECCIÓN DE LOS VALORES ANIMADOS -->
+    <!-- Línea para separar secciones -->
+    <div style="height: 30px;"></div>
 
-<!-- LINEA PARA SEPARAR DESDE UNA SECCION A OTRA  -->
-<div style="height: 50px;"></div>
-<!-- ESTRUCTURA DEL FONDO DE LOS ANIMALITOS ANIMADOS -->
-<div class="page-container">
-<div class="movie-section">
-    <div class="header">
-        <h1>¡GRACIAS POR VISITARNOS Y QUE TENGAS UN BUEN DÍA!</h1>
-        <h2>-Te presentamos los valores que transmitimos en -ZoofiPets-</h2>
-        <div class="header-image">
-            <img src="fondo1.png" alt="patitas">
+    <!-- Contenedor principal para los valores de ZooFiPets -->
+    <div class="page-container">
+        <div class="movie-section">
+            <!-- Encabezado con mensaje de bienvenida -->
+            <div class="header">
+                <h1>¡GRACIAS POR VISITARNOS Y QUE TENGAS UN BUEN DÍA!</h1>
+                <h2>-Te presentamos los valores que transmitimos en -ZooFiPets-</h2>
+                <div class="header-image">
+                    <img src="fondo1.png" alt="Imagen decorativa de patitas">
+                </div>
+            </div>
+
+            <!-- Contenedor para las tarjetas animadas -->
+            <div class="movie-grid">
+                <!-- Tarjeta 1: Compasión -->
+                <div class="text-center">
+                    <div class="movie-card">
+                        <img src="perro1.jpg" alt="Perrito representando compasión">
+                        <div class="card-overlay">
+                            <h5 class="card-title">-Compasión-</h5>
+                            <p class="card-description">Empatía y cuidado amoroso hacia animales y sus dueños</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Tarjeta 2: Profesionalismo -->
+                <div class="text-center">
+                    <div class="movie-card">
+                        <img src="gato1.png" alt="Gatito representando profesionalismo">
+                        <div class="card-overlay">
+                            <h5 class="card-title">-Profesionalismo-</h5>
+                            <p class="card-description">Estándares éticos y técnicos en servicios veterinarios</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Tarjeta 3: Dedicación -->
+                <div class="text-center">
+                    <div class="movie-card">
+                        <img src="perro2.png" alt="Perrito representando dedicación">
+                        <div class="card-overlay">
+                            <h5 class="card-title">-Dedicación-</h5>
+                            <p class="card-description">Compromiso con el cuidado integral y personalizado</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Tarjeta 4: Transparencia -->
+                <div class="text-center">
+                    <div class="movie-card">
+                        <img src="gato3.jpg" alt="Gatito representando transparencia">
+                        <div class="card-overlay">
+                            <h5 class="card-title">-Transparencia-</h5>
+                            <p class="card-description">Comunicación clara, honesta y confiable</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Tarjeta 5: Excelencia -->
+                <div class="text-center">
+                    <div class="movie-card">
+                        <img src="perro3.jpg" alt="Perrito representando excelencia">
+                        <div class="card-overlay">
+                            <h5 class="card-title">Excelencia</h5>
+                            <p class="card-description">Búsqueda continua de calidad y mejora en servicios</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
-
-    <div class="movie-grid">
-        <!-- TARJETA ANIMADA 1 -->
-        <div class="text-center">
-            <div class="movie-card">
-                <img src="perro1.jpg" alt="Perrito">
-                <div class="card-overlay">
-                    <h5 class="card-title">-Compasión-</h5>
-                    <p class="card-description"> Empatía y cuidado amoroso hacia animales y sus dueños</p>
-                </div>
-            </div>
-        </div>
-
-        <!-- TARJETA ANIMADA 2 -->
-        <div class="text-center">
-            <div class="movie-card">
-                <img src="gato1.png" alt="gatito">
-                <div class="card-overlay">
-                    <h5 class="card-title">-Profesionalismo-</h5>
-                    <p class="card-description">Estándares éticos y técnicos en servicios veterinarios</p>
-                </div>
-            </div>
-        </div>
-
-        <!-- TARJETA ANIMADA 3 -->
-        <div class="text-center">
-            <div class="movie-card">
-                <img src="perro2.png" alt="Perrito">
-                <div class="card-overlay">
-                    <h5 class="card-title">-Dedicación-</h5>
-                    <p class="card-description">Compromiso con el cuidado integral y personalizado</p>
-                </div>
-            </div>
-        </div>
-
-        <!-- TARJETA ANIMADA 4 -->
-        <div class="text-center">
-            <div class="movie-card">
-                <img src="gato3.jpg" alt="gatito">
-                <div class="card-overlay">
-                    <h5 class="card-title">-Transparencia-</h5>
-                    <p class="card-description">Comunicación clara, honesta y confiable</p>
-                </div>
-            </div>
-        </div>
-
-        <!-- TARJETA ANIMADA 5 -->
-        <div class="text-center">
-            <div class="movie-card">
-                <img src="perro3.jpg" alt="Perrito">
-                <div class="card-overlay">
-                    <h5 class="card-title">Excelencia</h5>
-                    <p class="card-description">Búsqueda continua de calidad y mejora en servicios</p>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-</div>
-
+</body>
 
 
 
@@ -391,100 +408,101 @@
 
 <!-- SECCIÓN DE 3 TARJETAS DE CIERRE -->
 <div class="informacion-container">
-  <!-- Bloque de Dirección -->
-  <div class="info-bloque">
-    <div class="info-icono">
-      <img src="ubicacion.jpg" alt="Icono ubicación">
+    <!-- Bloque de Dirección -->
+    <div class="info-bloque">
+        <div class="info-icono">
+            <!-- Imagen representativa de la ubicación -->
+            <img src="ubicacion.jpg" alt="Icono ubicación">
+        </div>
+        <div class="info-texto">
+            <h3>ENCUÉNTRANOS EN</h3>
+            <!-- Dirección física de la empresa -->
+            <p>Av. El Trompillo 300, Santa Cruz de la Sierra, Bolivia</p>
+        </div>
     </div>
-    <div class="info-texto">
-      <h3>ENCUÉNTRANOS EN</h3>
-      <p>Av. El Trompillo 300, Santa Cruz de la Sierra, Bolivia</p>
-    </div>
-  </div>
 
-  <!-- Bloque de Medios de Contacto -->
-  <div class="info-bloque">
-    <div class="info-icono">
-      <img src="telefono.jpg" alt="Icono teléfono">
+    <!-- Bloque de Medios de Contacto -->
+    <div class="info-bloque">
+        <div class="info-icono">
+            <!-- Imagen representativa de contacto telefónico -->
+            <img src="telefono.jpg" alt="Icono teléfono">
+        </div>
+        <div class="info-texto">
+            <h3>MEDIOS DE CONTÁCTO</h3>
+            <!-- Información de contacto: teléfono, WhatsApp y correo -->
+            <p>Teléfono: 3-536325</p>
+            <p>Whatsapp: 760-09980</p>
+            <p>Email: Gerencia&#64;veterinarialassie.com</p>
+        </div>
     </div>
-    <div class="info-texto">
-      <h3>MEDIOS DE CONTÁCTO</h3>
-      <p>Teléfono: 3-536325</p>
-      <p>Whatsapp: 760-09980</p>
-      <p>Email: Gerencia&#64;veterinarialassie.com</p>
-    </div>
-  </div>
 
-  <!-- Bloque de Horarios -->
-  <div class="info-bloque">
-    <div class="info-icono">
-      <img src="reloj.jpg" alt="Icono horario">
+    <!-- Bloque de Horarios -->
+    <div class="info-bloque">
+        <div class="info-icono">
+            <!-- Imagen representativa de horarios -->
+            <img src="reloj.jpg" alt="Icono horario">
+        </div>
+        <div class="info-texto">
+            <h3>HORARIOS</h3>
+            <!-- Información de los horarios de atención -->
+            <p>Lunes - Viernes: 08:30 - 20:00</p>
+            <p>Sábados: 09:30 - 21:30</p>
+            <p>Emergencias: 24hrs todos los días</p>
+        </div>
     </div>
-    <div class="info-texto">
-      <h3>HORARIOS</h3>
-      <p>Lunes - Viernes: 08:30 - 20:00</p>
-      <p>Sábados: 09:30 - 21:30</p>
-      <p>Emergencias: 24hrs todos los días</p>
-    </div>
-  </div>
 </div>
 
-
-
-
-
-    
-<!-- LINEA PARA SEPARAR DESDE UNA SECCION A OTRA  -->
-<div style="height: 50px;"></div>
-
+<!-- SEPARADOR ENTRE SECCIONES -->
+<div style="height: 30px;"></div>
 
 <!-- SECCIÓN DE REDES SOCIALES -->
 <div class="social-section">
-  <h2>Síguenos en todas nuestras Redes</h2>
-  <div class="social-cards">
-    <!-- Enlace a Facebook -->
-    <a href="https://www.facebook.com/profile.php?id=61558517858308" target="_blank" class="social-card">
-      <img src="facebook.webp" alt="Facebook">
-      <div class="social-card-body">
-        <h3>Facebook</h3>
-        <p>ZoofiPets</p>
-      </div>
-    </a>
-    
-    <!-- Enlace a Instagram -->
-    <a href="https://www.instagram.com/zoofipetss/" target="_blank" class="social-card">
-      <img src="Instagram.webp" alt="Instagram">
-      <div class="social-card-body">
-        <h3>Instagram</h3>
-        <p>ZoofiPets</p>
-      </div>
-    </a>
+    <!-- Encabezado de la sección -->
+    <h2>¡SIGUENOS EN TODAS NUESTRAS REDES!</h2>
+    <div class="social-cards">
+        <!-- Tarjeta de Facebook -->
+        <a href="https://www.facebook.com/profile.php?id=61558517858308" target="_blank" class="social-card">
+            <img src="facebook.webp" alt="Facebook">
+            <div class="social-card-body">
+                <h3>Facebook</h3>
+                <p>ZoofiPets</p>
+            </div>
+        </a>
 
-    <!-- Enlace a WhatsApp -->
-    <a href="https://api.whatsapp.com/send?phone=59172123456" target="_blank" class="social-card">
-      <img src="wpps.webp" alt="WhatsApp">
-      <div class="social-card-body">
-        <h3>WhatsApp</h3>
-        <p>+591 79487339</p>
-      </div>
-    </a>
+        <!-- Tarjeta de Instagram -->
+        <a href="https://instagram.com/zoofipets" target="_blank" class="social-card">
+            <img src="Instagram.webp" alt="Instagram">
+            <div class="social-card-body">
+                <h3>Instagram</h3>
+                <p>ZoofiPetss</p>
+            </div>
+        </a>
 
-    <!-- Enlace a TikTok -->
-    <a href="https://www.tiktok.com/@zoofipetss?lang=es" target="_blank" class="social-card">
-      <img src="tiktok.webp" alt="TikTok">
-      <div class="social-card-body">
-        <h3>TikTok</h3>
-        <p>ZoofiPets</p>
-      </div>
-    </a>
+        <!-- Tarjeta de WhatsApp -->
+        <a href="https://api.whatsapp.com/send?phone=59172123456" target="_blank" class="social-card">
+            <img src="wpps.webp" alt="WhatsApp">
+            <div class="social-card-body">
+                <h3>WhatsApp</h3>
+                <p>+591 79487339</p>
+            </div>
+        </a>
 
-    <!-- Enlace a Twitter -->
-    <a href="https://twitter.co" target="_blank" class="social-card">
-      <img src="twitter.webp" alt="Twitter">
-      <div class="social-card-body">
-        <h3>Twitter</h3>
-        <p>-ZoofiPetss-</p>
-      </div>
-    </a>
-  </div>
+        <!-- Tarjeta de TikTok -->
+        <a href="https://www.tiktok.com/@zoofipetss?lang=es" target="_blank" class="social-card">
+            <img src="tiktok.webp" alt="TikTok">
+            <div class="social-card-body">
+                <h3>TikTok</h3>
+                <p>ZoofiPetss</p>
+            </div>
+        </a>
+
+        <!-- Tarjeta de Twitter -->
+        <a href="https://twitter.co" target="_blank" class="social-card">
+            <img src="twitter.webp" alt="Twitter">
+            <div class="social-card-body">
+                <h3>Twitter</h3>
+                <p>-ZoofiPetss-</p>
+            </div>
+        </a>
+    </div>
 </div>

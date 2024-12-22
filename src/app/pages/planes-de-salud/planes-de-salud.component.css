@@ -10,63 +10,99 @@
 
 
 
-      /* Animación y efecto de elevación */
-      .card {
-        width: 26rem; /* Ancho de la tarjeta */
-        transition: transform 0.3s ease, box-shadow 0.3s ease;
-      }
-    
-      .card:hover {
-        transform: translateY(-10px); /* Elevar tarjeta */
-        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); /* Sombra */
-      }
-    
-      /* Imagen en las tarjetas */
-      .card img {
-        width: 100%; /* Ocupar todo el ancho de la tarjeta */
-        height: 220px; /* Altura de las imágenes */
-        object-fit: cover; /* Mantener proporciones de la imagen */
-      }
-    
-      /* Texto en negrita */
-      .card-text {
-        font-weight: bold;
-        font-size: 1.2rem;
-      }
-    
-      /* Descripción debajo del título */
-      .card-description {
-        font-size: 1rem;
-        color: #555; /* Color gris suave */
-        margin-bottom: 1rem;
-      }
-    
-      /* Botones morados */
-      .btn-purple {
-        background-color: #6a1b9a;
-        color: white;
-        border: none;
-        padding: 0.8rem 1.2rem;
-        font-size: 1rem;
-        transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
-      }
-    
-      .btn-purple:hover {
-        background-color: #7b1fa2;
-        transform: translateY(-3px); /* Elevar botón */
-        box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2); /* Sombra */
-      }
-    
-      /* Centrando tarjetas */
-      .d-flex {
-        justify-content: center;
-        align-items: center;
-      }
-    
-      /* Sombra personalizada */
-      .shadow-custom {
-        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-      }
+/* Estilo general de las tarjetas */
+.card {
+    width: 26rem; /* Define el ancho de la tarjeta */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Aplica una transición suave en los efectos de transformaciones y sombra */
+  }
+  
+  /* Efectos cuando el cursor pasa sobre la tarjeta */
+  .card:hover {
+    transform: translateY(-10px); /* Eleva la tarjeta 10px hacia arriba */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); /* Añade una sombra para simular un efecto de profundidad */
+  }
+  
+  /* Estilo para las imágenes dentro de las tarjetas */
+  .card img {
+    width: 100%; /* Hace que la imagen ocupe todo el ancho disponible de la tarjeta */
+    height: 220px; /* Establece la altura fija de las imágenes a 220px */
+    object-fit: cover; /* Ajusta la imagen para cubrir todo el espacio sin deformarla, recortando las partes sobrantes si es necesario */
+  }
+  
+  /* Estilo para el texto principal en las tarjetas */
+  .card-text {
+    font-weight: bold; /* Aplica negrita al texto */
+    font-size: 1.2rem; /* Establece el tamaño de la fuente a 1.2rem (mayor que el tamaño estándar) */
+  }
+  
+  /* Estilo para la descripción bajo el texto principal */
+  .card-description {
+    font-size: 1rem; /* Establece el tamaño de la fuente a 1rem (tamaño de fuente estándar) */
+    color: #555; /* Asigna un color gris suave al texto para una mejor legibilidad */
+    margin-bottom: 1rem; /* Añade un espacio en la parte inferior del texto para separar el contenido */
+  }
+  
+  /* Estilo para los botones morados */
+  .btn-purple {
+    background-color: #6a1b9a; /* Define un fondo morado para el botón */
+    color: white; /* Establece el color del texto del botón en blanco */
+    border: none; /* Elimina los bordes del botón */
+    padding: 0.8rem 1.2rem; /* Añade un relleno dentro del botón para hacerlo más grande y fácil de presionar */
+    font-size: 1rem; /* Define el tamaño de la fuente en el botón */
+    transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease; /* Aplica una transición suave a las propiedades al interactuar con el botón */
+  }
+  
+  /* Efectos cuando el cursor pasa sobre el botón */
+  .btn-purple:hover {
+    background-color: #7b1fa2; /* Cambia el color de fondo a un tono morado más oscuro cuando el cursor pasa por encima */
+    transform: translateY(-3px); /* Eleva el botón ligeramente hacia arriba */
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2); /* Añade una sombra para darle profundidad al botón */
+  }
+  
+  /* Estilo para centrar las tarjetas dentro del contenedor */
+  .d-flex {
+    justify-content: center; /* Centra las tarjetas horizontalmente */
+    align-items: center; /* Centra las tarjetas verticalmente */
+  }
+  
+  /* Sombra personalizada para las tarjetas */
+  .shadow-custom {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Aplica una sombra suave y difusa a las tarjetas para un efecto de profundidad */
+  }
+  
+  /* Estilo para el contenedor de la barra de rango (input de tipo range) */
+  .custom-container {
+    display: flex; /* Utiliza un diseño flexible para alinear los elementos */
+    flex-direction: column; /* Apila los elementos en columna */
+    align-items: center; /* Centra los elementos horizontalmente */
+    gap: 10px; /* Espacio entre los elementos */
+    margin: 20px 0; /* Añade espacio arriba y abajo del contenedor */
+  }
+  
+  /* Estilo para la barra de rango */
+  .form-range {
+    width: 80%; /* Hace que la barra de rango ocupe el 80% del ancho disponible */
+    margin: 10px 0; /* Añade espacio arriba y abajo de la barra */
+  }
+  
+  /* Estilo para el botón de enviar */
+  .submit-btn {
+    background-color: #6a1b9a; /* Define un fondo morado para el botón */
+    color: white; /* Establece el texto del botón en blanco */
+    padding: 0.8rem 1.2rem; /* Añade relleno al botón */
+    font-size: 1rem; /* Establece el tamaño de la fuente en el botón */
+    border: none; /* Elimina los bordes del botón */
+    border-radius: 5px; /* Añade bordes redondeados */
+    cursor: pointer; /* Cambia el cursor cuando pasa por encima para indicar que es clickeable */
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Transición suave para el color de fondo y el movimiento */
+  }
+  
+  /* Efectos cuando el cursor pasa sobre el botón de enviar */
+  .submit-btn:hover {
+    background-color: #7b1fa2; /* Cambia el fondo a un tono más oscuro cuando el cursor pasa sobre el botón */
+    transform: translateY(-3px); /* Eleva ligeramente el botón */
+  }
+  
 
 
 
